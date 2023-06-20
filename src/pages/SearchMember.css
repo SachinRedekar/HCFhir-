@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+  }
+.textbox {
+    border: 1px solid #cccccc; 
+    outline:0; 
+    height:50px; 
+    width: 400px; 
+    font-size: 20px;
+    padding: 3px 6px 3px 6px;
+ }
+ .textbox2 {
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    padding: 3px 6px 3px 6px;
+ }
+
+ .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 70px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .box{
+    height: 50px;
+  }
+
+
+  .container{
+    height: 80px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+  }
+
+  .a{
+    /* height: 20px; */
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
